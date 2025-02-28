@@ -9,12 +9,12 @@ clear
 
 installTheme(){
     cd /var/www/
-    tar -cvf Utamabackup.tar.gz pterodactyl
+    tar -cvf WallpaperPterodactyl.tar.gz pterodactyl
     echo "Installing theme..."
     cd /var/www/pterodactyl
-    rm -r Utama
+    rm -r WallpaperPterodactyl
     git clone https://github.com/Verucaa/WallpaperPterodactyl.git
-    cd Utama
+    cd WallpaperPterodactyl
     rm /var/www/pterodactyl/resources/scripts/Utama.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     mv index.tsx /var/www/pterodactyl/resources/scripts/index.tsx
